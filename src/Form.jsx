@@ -6,7 +6,7 @@ const Form = () => {
 
   function inputChange(e) {
     // accept only numbers
-    if (!parseInt(e.target.value)) {
+    if (isNaN(parseInt(e.target.value))) {
       e.target.value = "";
       return;
     }
@@ -22,7 +22,7 @@ const Form = () => {
     // applied only on first input
     if (currentIndex === 0) {
       for (let i = 0; i < paste.length; i++) {
-        if (!inpRefs[i] || !parseInt(paste[i])) return;
+        if (!inpRefs[i] || isNaN(parseInt(paste[i]))) return;
         inpRefs[i].current.value = paste[i];
       }
     }
