@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #242424;
+}
+.logo {
+  height: 10em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+section {
+  display: flex;
+  padding: 5rem 0;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 8rem 0;
+    flex-direction: row;
+  }
+  .logo {
+    height: 20em;
+  }
+}
+h1 {
+  font-size: 2em;
+}
+p {
+  margin: 10px 0;
+}
+form {
+  max-width: 400px;
+}
+.inputs-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0 1.5rem;
+}
+input {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: #333;
+  outline: transparent;
+  background: #d9d9d9;
+  border: 2px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: border 400ms ease-in-out;
+  cursor: pointer;
+}
+input:focus-within {
+  border-color: rgb(0, 216, 255);
+}
+button {
+  margin-top: 2rem;
+  background: rgb(5, 134, 156);
+  color: #fff;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-color: rgb(0, 216, 255);
+  border-radius: 6px;
+}
