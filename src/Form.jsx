@@ -19,6 +19,8 @@ const Form = () => {
   function handlePaste(e) {
     let paste = e.clipboardData.getData("text");
 
+    paste = paste.trim();
+
     // applied only on first input
     if (currentIndex === 0) {
       for (let i = 0; i < paste.length; i++) {
